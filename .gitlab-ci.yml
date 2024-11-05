@@ -1,0 +1,31 @@
+stages:
+  - build
+  - deploy
+
+build:
+  image: docker:latest
+  stage: build
+  services:
+    - docker:24.0.6-dind
+  before_script:
+    - docker login registry.gitlab.com -u ${CI_REGISTRY_USER} -p ${CI_REGISTRY_PASSWORD}
+  script:
+    - docker build --build-arg build_name=development --pull -t "$CI_REGISTRY_IMAGE" .
+    - docker push "$CI_REGISTRY_IMAGE"
+    - echo "Registry image:" $CI_REGISTRY_IMAGE
+  only:
+    - dev
+
+deploy:
+  image: alpine:latest
+  stage: deploy
+  script:
+    - chmod og= $APP_DEV_PRIV_KEY
+    - apk update && apk add openssh-client
+    - ssh -i $APP_DEV_PRIV_KEY -o StrictHostKeyChecking=no app-dev@$APP_DEV_SERVER "sudo docker login registry.gitlab.com -u ${CI_REGISTRY_USER} -p ${CI_REGISTRY_PASSWORD}"
+    - ssh -i $APP_DEV_PRIV_KEY -o StrictHostKeyChecking=no app-dev@$APP_DEV_SERVER "sudo docker container rm -f idams-fe || true"
+    - ssh -i $APP_DEV_PRIV_KEY -o StrictHostKeyChecking=no app-dev@$APP_DEV_SERVER "sudo docker rmi ${CI_REGISTRY}/${CI_PROJECT_PATH}:latest || true"
+    - ssh -i $APP_DEV_PRIV_KEY -o StrictHostKeyChecking=no app-dev@$APP_DEV_SERVER "sudo docker pull ${CI_REGISTRY}/${CI_PROJECT_PATH}:latest"
+    - ssh -i $APP_DEV_PRIV_KEY -o StrictHostKeyChecking=no app-dev@$APP_DEV_SERVER "sudo docker run -d -p 5700:80 --name idams-fe $CI_REGISTRY_IMAGE"
+  only:
+    - dev

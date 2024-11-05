@@ -1,0 +1,89 @@
+.solecode-ui-confirmation-modal {
+  border-radius: 8px;
+  padding: 0;
+  box-shadow: 0 8px 16px 0 rgba(89, 89, 89, 0.2);
+  border: solid 1px #d9d9d9;
+  background-color: #fff;
+
+  .ant-modal-close-x {
+    display: none;
+  }
+
+  .modal-confirmation {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    .modal-header {
+      font-size: 20px;
+      font-weight: 600;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.4;
+      letter-spacing: normal;
+      text-align: center;
+      color: #1a79cb;
+
+      > div:last-child {
+        margin: 16px 0px 8px;
+      }
+      
+      .anticon {
+        svg {
+          color: #1a79cb;
+        }
+      }
+
+      &.is-danger {
+        color: #ff4d4f;
+
+        .anticon {
+          svg {
+            color: #ff4d4f;
+          }
+        }
+      }
+    }
+
+    .modal-content {
+      font-size: 16px;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.5;
+      letter-spacing: normal;
+      text-align: center;
+      color: #262626e6;
+
+      > div:first-child {
+        margin-bottom: 8px;
+      }
+
+      .light-text {
+        font-size: 14px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.57;
+        letter-spacing: normal;
+        text-align: center;
+        color: rgba(38, 38, 38, 0.45);
+      }
+    }
+
+    .modal-footer {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      margin-top: 24px;
+
+			.solecode-ui-button {
+				.ant-btn {
+					display: flex;
+					align-items: center;
+				}
+			}
+    }
+  }
+}

@@ -1,0 +1,12 @@
+.solecode-ui-table-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+
+  > div {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+}

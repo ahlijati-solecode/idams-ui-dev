@@ -1,0 +1,357 @@
+$color-main-primary: #1A79CB;
+$color-main-danger: #ff4d4f;
+
+.solecode-ui-steps {
+	.ant-steps-vertical {
+		gap: 25px;
+
+		.ant-steps-item {
+			&.dot {
+				>.ant-steps-item-container {
+					>.ant-steps-item-tail {
+						&::after {
+							position: relative;
+							top: -5px;
+						}
+					}
+				}
+			}
+		}
+
+		>.ant-steps-item {
+			>.ant-steps-item-container {
+				>.ant-steps-item-tail {
+					top: -7px;
+					left: 15px;
+					height: 220%;
+
+					&::after {
+						width: 2px;
+					}
+				}
+
+				.ant-steps-item-content {
+					.ant-steps-item-title {
+						padding-right: 0;
+					}
+				}
+			}
+
+			&-current {
+				&-next {
+					>.ant-steps-item-container {
+						>.ant-steps-item-icon {
+							background: $color-main-primary;
+							border-color: $color-main-primary;
+	
+							.ant-steps-icon {
+								color: #fff;
+							}
+						}
+	
+						>.ant-steps-item-tail {
+							&::after {
+								background-color: $color-main-primary;
+							}
+						}
+
+						.ant-steps-item-content {
+							.ant-steps-item-title {
+								font-weight: 600;
+							}
+						}
+					}
+
+					&.dot {
+						>.ant-steps-item-container {
+							>.ant-steps-item-icon {
+								width: 21px;
+								height: 21px;
+								position: relative;
+								top: 6px;
+								left: 5px;
+								margin-right: 27px;
+							}
+						}
+					}
+
+					&.skipped {
+						>.ant-steps-item-container {
+							>.ant-steps-item-icon {
+								background: $color-main-danger;
+								border-color: $color-main-danger;
+							}
+						}
+					}
+				}
+
+				&-last {
+					>.ant-steps-item-container {
+						>.ant-steps-item-icon {
+							background: $color-main-primary;
+							border-color: $color-main-primary;
+	
+							.ant-steps-icon {
+								color: #fff;
+
+								.ant-steps-icon-dot {
+									height: 16px;
+									width: 16px;
+								}
+							}
+						}
+
+						>.ant-steps-item-tail {
+							&::after {
+								position: relative;
+								top: 1px;
+							}
+						}
+
+						.ant-steps-item-content {
+							.ant-steps-item-title {
+								font-weight: 600;
+							}
+						}
+					}
+
+					&.dot {
+						>.ant-steps-item-container {
+							>.ant-steps-item-icon {
+								width: 21px;
+								height: 21px;
+								position: relative;
+								top: 6px;
+								left: 5px;
+								margin-right: 27px;
+							}
+						}
+					}
+				}
+			}
+
+			&-unlocked {
+				>.ant-steps-item-container {
+					>.ant-steps-item-icon {
+						background: #fff;
+						border-color: $color-main-primary;
+
+						.ant-steps-icon {
+							color: $color-main-primary;
+						}
+					}
+				}
+
+				&-next {
+					>.ant-steps-item-container {
+						>.ant-steps-item-icon {
+							background: #fff;
+							border-color: $color-main-primary;
+	
+							.ant-steps-icon {
+								color: $color-main-primary;
+							}
+						}
+						>.ant-steps-item-tail {
+							&::after {
+								background: $color-main-primary;
+							}
+						}
+					}
+
+					&.dot {
+						>.ant-steps-item-container {
+							>.ant-steps-item-icon {
+								width: 21px;
+								height: 21px;
+								position: relative;
+								top: 6px;
+								left: 5px;
+								margin-right: 27px;
+							}
+						}
+
+						&.skipped {
+							>.ant-steps-item-container {
+								>.ant-steps-item-icon {
+									background: #fff;
+									border-color: $color-main-danger;
+								}
+								>.ant-steps-item-tail {
+									&::after {
+										background: $color-main-primary;
+									}
+								}
+							}
+						}
+					}
+				}
+
+				&.dot {
+					>.ant-steps-item-container {
+						>.ant-steps-item-icon {
+							width: 21px;
+							height: 21px;
+							position: relative;
+							top: 6px;
+							left: 5px;
+							margin-right: 27px;
+						}
+					}
+				}
+			}
+
+			&-finish {
+				&.dot {
+					>.ant-steps-item-container {
+						>.ant-steps-item-icon {
+							width: 21px;
+							height: 21px;
+							position: relative;
+							top: 6px;
+							left: 5px;
+							margin-right: 27px;
+						}
+
+						>.ant-steps-item-tail {
+							&::after {
+								top: -5px;
+							}
+						}
+					}
+
+					&.skipped {
+						.ant-steps-item-icon {
+							border-color: $color-main-danger;
+						}
+					}
+				}
+
+				.ant-steps-item-icon {
+					border-color: $color-main-primary;
+		
+					>.ant-steps-icon {
+						color: $color-main-primary;
+					}
+				}
+
+				>.ant-steps-item-container {
+					>.ant-steps-item-content {
+						>.ant-steps-item-title {
+							&::after {
+								background-color: $color-main-primary;
+							}
+						}
+					}
+				}
+			}
+
+			&-disabled {
+				cursor: context-menu;
+			}
+
+			&-process {
+				>.ant-steps-item-container {
+					>.ant-steps-item-icon {
+						background: $color-main-primary;
+					}
+				}
+			}
+
+			&-wait {
+				&.dot {
+					>.ant-steps-item-container {
+						>.ant-steps-item-icon {
+							width: 21px;
+							height: 21px;
+							position: relative;
+							top: 6px;
+							left: 5px;
+							margin-right: 27px;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.ant-steps {
+		.ant-steps-item-icon {
+			.ant-steps-icon {
+				top: -1.5px;
+			}
+		}
+
+		.ant-steps-item {
+			&:not(.ant-steps-item-active) {
+				.ant-steps-item-container[role='button']:hover {
+					.ant-steps-item-title,
+					.ant-steps-item-description {
+						color: $color-main-primary;
+					}
+				}
+
+				&:not(.ant-steps-item-process) {
+					>.ant-steps-item-container[role='button'] {
+						&:hover {
+							.ant-steps-item-icon {
+								border-color: $color-main-primary;
+							}
+						}
+					}
+				}
+			}
+
+			&.skipped {
+				&:not(.ant-steps-item-active) {	
+					&:not(.ant-steps-item-process) {
+						>.ant-steps-item-container[role='button'] {
+							&:hover {
+								.ant-steps-item-icon {
+									border-color: $color-main-danger;
+								}
+
+								.ant-steps-item-title {
+									color: $color-main-danger
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.ant-steps {
+		.anticon {
+			.solecode-ui-icon {
+				color: $color-main-primary;
+			}
+		}
+
+		.ant-steps-item-wait {
+			.anticon {
+				.solecode-ui-icon {
+					color: rgba(38, 38, 38, 0.25);
+				}
+			}
+		}
+
+
+		.ant-steps-item-container {
+			.ant-steps-item-title {
+				width: 100%;
+
+				.custom-title-wrapper {
+					display: flex;
+					justify-content: space-between;
+					align-items: center;
+
+					.anticon {
+						cursor: pointer;
+					}
+				}
+			}
+		}
+	}
+}

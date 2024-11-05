@@ -1,0 +1,268 @@
+.all-projects {
+  .chart-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+
+    .chart-card {
+      display: flex;
+      align-items: center;
+      gap: 24px;
+      width: 100%;
+      padding: 16px;
+      border-radius: 8px;
+      color: #fff;
+      font-weight: bold;
+  
+      > div:first-child {
+        width: 86px;
+        height: 86px;
+      }
+
+      &.total-project {
+        background: #0e4370;
+
+        > div:first-child {
+          background: url('../../assets/chart-1.png');
+          background-size: cover;
+        }
+      }
+
+      &.inisiasi {
+        background: #3c6db2;
+
+        > div:first-child {
+          background: url('../../assets/chart-2.png');
+          background-size: cover;
+        }
+      }
+
+      &.seleksi {
+        background: #accd08;
+
+        > div:first-child {
+          background: url('../../assets/chart-3.png');
+          background-size: cover;
+        }
+      }
+
+      &.kajian-lanjut {
+        background: #ba313b;
+
+        > div:first-child {
+          background: url('../../assets/chart-4.png');
+          background-size: cover;
+        }
+      }
+
+      &.fid-approved {
+        background: #595959;
+
+        > div:first-child {
+          background: url('../../assets/chart-5.png');
+          background-size: cover;
+        }
+      }
+  
+      > div:nth-child(2) {
+        display: flex;
+        flex-direction: column;
+        font-size: 12px;
+        
+        > div:first-child {
+          font-size: 16px;
+        }
+  
+        > div:nth-child(2) {
+          font-size: 30px;
+        }
+      }
+    }
+  }
+
+  .paper-container {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    .filter-container {
+      display: flex;
+      flex-grow: 1;
+      gap: 16px;
+      margin-bottom: 16px;
+
+      .solecode-ui-dropdown {
+        width: 100%;
+
+        .ant-btn {
+          height: 56px;
+          border-radius: 8px;
+        }
+      }
+
+      .solecode-ui-search-filter {
+        width: 300%;
+      }
+    }
+
+    .all-projects-table {
+      padding: 16px;
+      border: 1px solid #d9d9d9;
+      border-radius: 8px;
+
+      .solecode-ui-table-wrapper {
+        .solecode-ui-table-header {
+          .solecode-ui-button {
+            button {
+              border-radius: 8px;
+            }
+          }
+        }
+      }
+
+      .all-projects-table-wrapper {
+        .solecode-ui-table {
+          .table-container {
+            .table-main {
+              thead {
+                tr {
+                  height: 58px;
+
+                  th:first-child {
+                    width: 70px;
+                    min-width: 70px;
+                    max-width: 70px;
+                    left: 0px;
+                    position: -webkit-sticky;
+                    position: sticky;
+                    background-color: #e5f5fc;
+                    z-index: 2;
+                  }
+
+                  th:nth-child(2) {
+                    left: 70px;
+                    position: -webkit-sticky;
+                    position: sticky;
+                    background-color: #e5f5fc;
+                    z-index: 2;
+                  }
+                }
+              }
+            
+              tbody {
+                tr {
+                  height: 58px;
+
+                  td:first-child {
+                    width: 70px;
+                    min-width: 70px;
+                    max-width: 70px;
+                    left: 0px;
+                    position: -webkit-sticky;
+                    position: sticky;
+                    background: white;
+                  }
+
+                  td:nth-child(2) {
+                    left: 70px;
+                    position: -webkit-sticky;
+                    position: sticky;
+                    background: white;
+                  }
+                }
+              }
+            }
+          }
+
+          .pagination {
+            .solecode-ui-pagination {
+              display: flex;
+              justify-content: space-between;
+              width: 100%;
+
+              > div:first-child {
+                font-weight: bold;
+              }
+
+              .page-index {
+                margin-left: auto;
+
+                div:nth-last-child(1) {
+                  display: none;
+                }
+
+                div:nth-last-child(2) {
+                  display: none;
+                }
+
+                div:nth-last-child(3) {
+                  display: none;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .trash-can-icon {
+    display: flex;
+    justify-content: center;
+
+    .solecode-ui-button {
+      .ant-btn {
+        background: #fff1f0;
+        border: none;
+        box-shadow: none;
+        border-radius: 100%;
+        
+        .anticon {
+          svg {
+            color: #ff4d4f;
+          }
+        }
+      }
+    }
+  }
+}
+
+.custom-table-view {
+  display: flex;
+  flex-direction: column;
+  min-width: 743px;
+  padding: 4px 8px;
+
+  > div:first-child {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 16px;
+
+    > div {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      width: 100%;
+    }
+  }
+
+  > div:nth-child(2) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 16px;
+    border-top: 1px solid #d9d9d9;
+
+    > div:first-child {
+      display: flex;
+      align-items: center;
+      gap: 30px;
+    }
+
+    > div:last-child {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+  }
+}

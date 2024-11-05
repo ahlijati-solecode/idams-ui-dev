@@ -1,0 +1,42 @@
+.solecode-ui-richtext {
+	.quill {
+		.ql {
+			&-toolbar {
+				border-radius: 8px 8px 0 0;
+			}
+
+			&-container {
+				border-radius: 0 0 8px 8px;
+
+				.ql-editor {
+					min-height: 100px;
+				}
+			}
+		}
+
+		&.quill-disabled {
+			.ql-disabled {
+				background-color: rgba(229, 240, 254, 0.4);
+				color: rgba(38, 38, 38, 0.45);
+			}
+
+			.ql-toolbar {
+				>.ql-formats {
+					display: none;
+				}
+
+				&.ql-snow {
+					padding: 0;
+					border: none;
+				}
+
+				+ {
+					.ql-container.ql-snow {
+						border-top: 1px solid #ccc;
+						border-radius: 8px;
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,145 @@
+$color-main-primary: #1a79cb;
+
+.projects-content {
+	.solecode-ui-paper-header {
+		.solecode-ui-paper-title {
+			div {
+				span {
+					&:first-child {
+						color: rgba(38, 38, 38, 0.45);
+					}
+
+					&:nth-child(2) {
+						&:before {
+							content: '/';
+							margin: 0 16px
+						}
+
+						font-weight: 600;
+					}
+
+
+				}
+			}
+		}
+	}
+	.custom-row {
+		.custom-col-12 {
+			width: 100%;
+			display: flex;
+			flex-direction: column;
+			gap: 16px;
+			padding: 16px;
+			border: 1px solid #d9d9d9;
+			border-radius: 8px;
+
+			.toolbar-wrapper {
+				display: flex;
+				flex-direction: row;
+				flex-wrap: nowrap;
+				justify-content: space-between;
+				align-items: center;
+				
+				.search-filter-wrapper {
+					display: flex;
+					flex-direction: row;
+					gap: 16px;
+					flex-grow: 2;
+
+					.solecode-ui-search-filter {
+						width: 50%;
+					}
+
+					.solecode-ui-dropdown {
+						.ant-btn {
+							height: 56px;
+							border-radius: 8px;
+							min-width: 140px;
+						}
+					}
+				}
+
+				.dropdown-group {
+					display: flex;
+					flex-direction: row;
+					align-items: center;
+					gap: 10px;
+
+					.solecode-ui-dropdown {
+						&:nth-child(2) {
+							.ant-btn {
+								&.ant-btn-lg {
+									width: 150px;
+								}
+							}
+						}
+
+						.ant-btn {
+							border-radius: 8px;
+
+							&.ant-btn-lg {
+								height: 56px;
+								width: 140px;
+							}
+						}
+					}
+				}
+			}
+
+			.list-wrapper {
+				display: flex;
+				flex: 0 0 30%;
+				flex-direction: row;
+				flex-wrap: wrap;
+				justify-content: flex-start;
+				min-height: 30vh;
+				position: relative;
+				width: 100%;
+
+				.list-item {
+					width: 33%;
+				}
+
+				.solecode-ui-empty-state {
+					position:absolute; 
+					top:50%; 
+					left:50%; 
+					transform:translate(-50%, -50%); 
+				}
+
+				.anticon {
+					.solecode-ui-icon {
+						&.fa-spinner-third {
+							position: absolute;
+							top: 50%;
+							left: 50%;
+							transform: translate(-50%, -50%);
+							color: $color-main-primary
+						}
+					}
+				}
+			}
+
+			.solecode-ui-pagination {
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+
+				div {
+					&:first-child {
+						font-weight: 600;
+					}
+				}
+
+				.page-index {
+					div {
+						&:nth-last-child(1),
+						&:nth-last-child(2) {
+							display: none;
+						}
+					}
+				}
+			}
+		}
+	}
+}

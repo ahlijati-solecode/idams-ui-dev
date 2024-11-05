@@ -1,0 +1,166 @@
+$dot-soft-regional: #fcc29c;
+$dot-soft-shu: #f76707;
+$dot-soft-holding: #883904;
+$text-color-tomato: #ff7875;
+$color-main-primary: #1a79cb;
+
+.summary-card-component {
+	// padding: 3px 24px;
+
+	.text-bold {
+		font-weight: 600;
+	}
+
+	.header {
+		display: flex;
+		flex-direction: column;
+		box-shadow: none !important;
+		height: 100% !important;
+		border-radius: 8px 8px 0 0 !important;
+		padding: 18px 24px;
+		border-bottom: 1px solid rgba(38, 38, 38, 0.1);
+
+		.wrapper {
+			&-title {
+				h3 {
+					font-weight: 800;
+					font-size: 20px;
+				}
+			}
+			&-subtitle {
+				display: flex;
+				flex-direction: row;
+				gap: 24px;
+
+				.wrapper-threshold {
+					display: flex;
+					align-items: center;
+					gap: 10px;
+
+					.dot {
+						height: 8px;
+						width: 8px;
+						border-radius: 50%;
+						display: inline-block;
+
+						&.dot-color {
+							&-shu {
+								background-color: $dot-soft-shu;
+							}
+	
+							&-regional {
+								background-color: $dot-soft-regional;
+							}
+							
+							&-holding {
+								background-color: $dot-soft-holding;
+							}
+	
+							&-default {
+								background-color: #555;
+							}
+						}
+					}
+				}
+
+				.text-color-tomato {
+					color: $text-color-tomato;
+				}
+			}
+		}
+	}
+
+	.body {
+		padding: 18px 24px;
+		background-image: url('../assets/batik-white.png');
+		background-repeat: no-repeat;
+		background-size: contain;
+		border-radius: 0 0 8px 8px;
+
+		.solecode-ui-card {
+			.ant-card {
+				&.ant-card-bordered {
+					border: 1px solid #a3c9ea;
+				};
+			}
+		}
+
+		.wrapper {
+			&-btn-action {
+				display: flex;
+				flex-direction: row;
+				align-items: center;
+				gap: 16px;
+				margin-top: 16px;
+	
+				.solecode-ui-button {
+					.ant-btn {
+						border-radius: 8px;
+						display: flex;
+						align-items: center;
+						gap: 8px;
+	
+						&-lg {
+							height: 56px;
+						}
+
+						.view-comments-btn-wrapper {
+							display: flex;
+							align-items: center;
+							gap: 8px;
+						}
+					}
+				}
+			}
+
+			&-content {
+				display: flex;
+				align-items: center;
+				justify-content: space-between;
+
+				.solecode-ui-alert {
+					.ant-alert {
+						border-radius: 8px;
+
+						.ant-alert-content {
+							.ant-alert-message {
+								.inner-wrapper {
+									.anticon {
+										svg {
+											margin-right: 5px;
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+
+				.details {
+					display: flex;
+					flex-direction: row;
+					align-items: center;
+					gap: 16px;
+
+					.solecode-ui-icon {
+						color: $color-main-primary;
+					}
+
+					.detail-text-wrapper {
+						display: flex;
+						flex-direction: column;
+
+						span {
+							&:first-child {
+								font-size: 14px;
+							}
+							&:last-child {
+								font-size: 16px;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

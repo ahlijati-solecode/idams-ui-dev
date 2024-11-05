@@ -1,0 +1,125 @@
+$color-main-primary: #1a79cb;
+$color-main-disabled: #a3c9ea;
+
+.document-management-page {
+	.solecode-ui-paper-title {
+		.btn-scroll-wrapper {
+			.solecode-ui-button {
+				button {
+					border-color: $color-main-primary;
+
+					&:disabled {
+						border-color: $color-main-disabled;
+						cursor: context-menu;
+
+						.solecode-ui-icon {
+							color: $color-main-disabled;
+						}
+					}
+
+					.solecode-ui-icon {
+						color: $color-main-primary;
+					}
+				}
+			}
+		}
+	}
+
+	.custom-row {
+		border-radius: 8px;
+		box-shadow: 0 4px 8px 0 rgba(89, 89, 89, 0.2);
+
+		&:not(:first-child) {
+			background-color: #fff;
+			display: flex;
+			flex-direction: column;
+			gap: 24px;
+			padding: 24px;
+			box-shadow: none;
+		}
+
+		&:first-child {
+			margin-bottom: 16px;
+		}
+
+		.main-wrapper {
+			.files-content {
+				.solecode-ui-paper-header {
+					margin-bottom: 20px;
+				}
+
+				.custom-row {
+					padding: 0;
+				}
+			}
+
+			.projects-content {
+				.custom-row {
+					padding: 0;
+				}
+			}
+		}
+
+		.recent-file-wrapper {
+			.empty {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				flex-direction: column;
+				width: 100%;
+
+				div {
+					&:first-child {
+						color: #434343;
+						font-size: 20px;
+						font-weight: 600;
+					}
+
+					font-size: 14px;
+					color: #8c8c8c;
+				}
+			}
+		}
+
+		.group-by-wrapper {
+			display: flex;
+			align-items: center;
+			flex-direction: row;
+			justify-content: flex-end;
+			gap: 12px;
+			padding: 12px;
+			background-image: url('../../assets/batik-white-1.png');
+			background-repeat: no-repeat;
+			background-size: contain;
+			border-radius: 8px;
+			background-color: #fafafa;
+
+			.btn-wrapper {
+				.solecode-ui-button {
+					.ant-btn {
+						border-radius: 8px;
+						color: $color-main-primary;
+						border-color: $color-main-primary;
+	
+						.anticon {
+							.solecode-ui-icon {
+								vertical-align: text-bottom;
+								color: $color-main-primary;
+							}
+						}
+					}
+				}
+
+				&.selected {
+					.solecode-ui-button {
+						.ant-btn {
+							font-weight: 600;
+							background-color: #e5f0fe;
+						}
+					}
+				}
+			}
+
+		}
+	}
+}

@@ -1,0 +1,255 @@
+$text-color-warning: #998025;
+$text-color-error: #ba313b;
+$text-color-success: #51810f;
+$color-main-primary: #1a79cb;
+
+
+.detail-project-management-page {
+	.custom-row {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: nowrap;
+		gap: 16px;
+
+		&.custom-gap {
+			padding-top: 11px;
+			gap: 0 !important;
+		}
+
+		&:not(:last-child) {
+			margin-bottom: 16px;
+		}
+	
+		> .custom-col-4 {
+			width: 25%;
+			padding: 13px 16px;
+			border-radius: 8px;
+			background: #ffffff;
+			height: 100%;
+
+			.solecode-ui-card {
+				.ant-card-body {
+					.steps-wrapper {
+						.solecode-ui-steps {
+							.ant-steps-vertical {
+								gap: 20px;
+
+								.ant-steps-item {
+									.ant-steps-item-content {
+										.ant-steps-item-title {
+											font-weight: 600;
+										}
+									}
+
+									&.dot {
+										.ant-steps-item-content {
+											.ant-steps-item-title {
+												.custom-title-wrapper {
+													span {
+														font-weight: 500;
+													}
+												}
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+
+		> .custom-col-6 {
+			width: 50%;
+			padding: 19px 16px;
+			border-radius: 8px;
+			background: #ffffff;
+			height: 100%;
+
+			&.batik-white-bg {
+				padding: 0;				
+			}
+		}
+
+		> .custom-col-8 {
+			width: 75%;
+			border-radius: 8px;
+			background: #ffffff;
+
+			.solecode-ui-card {
+				padding: 13px 16px;
+			}
+		}
+
+		> .custom-col-12 {
+			width: 100%;
+			padding: 13px 16px;
+			border-radius: 8px;
+			background: #ffffff;
+
+			&.full {
+				padding: 0;
+			}
+		}
+	}
+
+	.solecode-ui-card {
+		.ant-card {
+			border-radius: 8px;
+		}
+	}
+
+	// .collapse-wrapper {
+	// 	padding: 16px 16px 16px 8px;
+	// 	display: flex;
+	// 	flex-direction: column;
+	// 	gap: 16px;
+
+	// 	&:not(:first-child) {
+	// 		padding-top: 0;
+	// 	}
+
+	// 	.solecode-ui-collapse {
+	// 		.ant-collapse {
+	// 			border-radius: 8px;
+
+	// 			>.ant-collapse-item {
+	// 				&:last-child {						
+	// 					background: #fff;
+	// 					border-radius: 8px;
+
+	// 					>.ant-collapse-header {
+	// 						background: #fff;
+	// 						border-radius: 8px;
+	// 						padding: 20px;
+
+	// 						.ant-collapse-header-text {
+	// 							font-weight: 600;
+	// 							font-size: 24px;
+	// 							border-left: 8px solid $color-main-primary;
+	// 							padding-left: 16px;
+	// 						}
+	// 					}
+
+	// 					>.ant-collapse-content {
+	// 						border-radius: 0 0 8px 8px;
+	// 					}
+	// 				}
+	// 			}
+	// 		}
+	
+	// 		.solecode-ui-alert {
+	// 			.ant-alert-message {
+	// 				span {
+	// 					font-size: 20px;
+	// 					font-weight: 600;
+	// 				}
+	// 			}
+
+	// 			.ant-alert {
+	// 				border-radius: 8px;
+
+	// 				.inner-wrapper {
+	// 					display: flex;
+	// 					align-items: center;
+	// 					padding: 38px 28px;
+	// 				}
+
+	// 				&-warning {
+	// 					.inner-wrapper {
+	// 						color: $text-color-warning;
+		
+	// 						.solecode-ui-icon {
+	// 							color: $text-color-warning;
+	// 						}
+	// 					}
+	// 				}
+
+	// 				&-info {
+	// 					.inner-wrapper {
+	// 						color: $color-main-primary;
+		
+	// 						.solecode-ui-icon {
+	// 							color: $color-main-primary;
+	// 						}
+	// 					}
+	// 				}
+
+	// 				&-success {
+	// 					.message-wrapper {
+	// 						.inner-wrapper {
+	// 							color: $text-color-success;
+			
+	// 							.solecode-ui-icon {
+	// 								color: $text-color-success;
+	// 							}
+	// 						}
+
+	// 						.description-right {
+	// 							.details-wrapper {
+	// 								.user {
+	// 									span {
+	// 										font-weight: 500;
+	// 										font-size: 16px;
+	// 										color: $text-color-success
+	// 									}
+	// 								}
+
+	// 								.date {
+	// 									span {
+	// 										font-weight: 500;
+	// 										font-size: 16px;
+	// 										color: $text-color-success
+	// 									}
+	// 								}
+	// 							}
+	// 						}
+	// 					}
+
+	// 				}
+
+	// 				&-error {
+	// 					.message-wrapper {
+	// 						.inner-wrapper {
+	// 							color: $text-color-error;
+			
+	// 							.solecode-ui-icon {
+	// 								color: $text-color-error;
+	// 							}
+	// 						}
+
+	// 						.description-right {
+	// 							.details-wrapper {
+	// 								.user {
+	// 									span {
+	// 										font-weight: 500;
+	// 										font-size: 16px;
+	// 										color: $text-color-error
+	// 									}
+	// 								}
+
+	// 								.date {
+	// 									span {
+	// 										font-weight: 500;
+	// 										font-size: 16px;
+	// 										color: $text-color-error
+	// 									}
+	// 								}
+	// 							}
+	// 						}
+	// 					}
+
+	// 				}
+	// 			}
+	// 		}
+	// 	}
+	// }
+
+	.progress-bar-wrapper {
+		margin-bottom: 24px;
+		border-radius: 8px;
+		padding: 16px;
+		background-color: rgba(229, 240, 254, 0.4);
+	}
+}

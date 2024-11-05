@@ -1,0 +1,1 @@
+common constant values / enums.

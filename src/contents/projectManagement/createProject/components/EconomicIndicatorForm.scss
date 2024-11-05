@@ -1,0 +1,206 @@
+.economic-indicator-form {
+  display: grid;
+  grid-gap: 24px;
+
+  &.modal {
+    padding: unset;
+  }
+
+  .solecode-ui-card {
+    padding: 0 !important;
+  }
+
+  .form {
+    display: grid;
+    grid-gap: 16px;
+
+		.form-field {
+			.ant-input-number {
+				&-disabled {
+					background-color: rgba(229, 240, 254, 0.4);
+					border-color: #d9d9d9;
+				}
+			}
+		}
+
+    &-bus-dev {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    &-non-bus-dev {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+    
+    .solecode-ui-input-text {
+      .ant-input-affix-wrapper {
+        input {
+          border: none;
+        }
+      }
+    }
+
+		.solecode-ui-input-number {
+			.input-prefix {
+				.prefix-element {
+					.prefix-custom {
+						color: rgba(38,38,38,.9);
+						font-weight: 600;
+					}
+				}
+			}
+		}
+
+    .ant-input-number-group-wrapper {
+      width: 100%;
+      .ant-input-number-group {
+        .ant-input-number {
+          border-top-right-radius: 0px;
+          border-bottom-right-radius: 0px;
+          border-right: 0px;
+        }
+        .ant-input-number-group-addon {
+          background-color: transparent;
+          border: solid 1px #a3c9ea;
+          border-left: 0px;
+          border-top-right-radius: 8px;
+          border-bottom-right-radius: 8px;
+          font-size: 16px;
+          font-weight: normal;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: 1.5;
+          letter-spacing: normal;
+          text-align: left;
+          color: #1a79cb;
+        }
+      }
+    }
+
+    .ant-input-number-affix-wrapper {
+      border: solid 1px #a3c9ea;
+      border-radius: 8px;
+      height: 48px;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      .ant-input-number {
+        border-left: none;
+        border-right: none;
+        border-top-left-radius: 0px;
+        border-bottom-left-radius: 0px;
+        .ant-input-number-handler-wrap {
+          border-radius: 8px;
+        }
+      }
+    }
+    .ant-input-number {
+      border: solid 1px #a3c9ea;
+      border-radius: 8px;
+      height: 48px;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      .ant-input-number-input-wrap {
+        width: 100%;
+      }
+      .ant-input-number-handler-wrap {
+        border-radius: 8px;
+      }
+    }
+
+    &-title {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      border-left: 8px solid #1a79cb;
+      padding-left: 16px;
+      font-size: 24px;
+      font-weight: 600;
+
+      .solecode-ui-tooltip .cursor-pointer {
+        margin-top: -6px !important;
+      }
+
+      .project-category {
+        margin-left: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 10px;
+        padding: 9px 16px;
+        border-radius: 8px;
+        border: solid 1px #017aad;
+        background-color: #e5f5fc;
+        color: rgba(38, 38, 38, 0.9);
+        font-size: 16px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.5;
+        letter-spacing: normal;
+      }
+
+      &.modal {
+        padding-left: unset;
+        border: none;
+
+        .project-category {
+          margin-left: unset;
+        }
+      }
+    }
+    &-label {
+      font-size: 16px;
+      font-weight: 600;
+      line-height: 1.5;
+      color: rgba(38, 38, 38, 0.9);
+      margin-bottom: 12px;
+      display: flex;
+			flex-direction: row;
+			align-items: center;
+    }
+
+    &-field {
+      .ant-input-affix-wrapper {
+        border: solid 1px #a3c9ea;
+        border-radius: 8px;
+        height: 48px;
+      }
+      .ant-input {
+        border: none;
+      }
+
+      .ant-input-suffix {
+        font-size: 16px;
+        line-height: 1.5;
+        color: #1a79cb;
+      }
+
+      .solecode-ui-input-text {
+        .ant-input {
+          border: 1px solid #a3c9ea;
+          border-radius: 8px;
+        }
+        .ant-input:disabled {
+          border: none;
+        }
+      }
+    }
+
+    .row {
+      display: flex;
+      flex: 1;
+      gap: 16px;
+
+      .form-field,
+      .item {
+        flex: 1;
+
+        &-action {
+          width: 64px;
+        }
+      }
+    }
+  }
+}

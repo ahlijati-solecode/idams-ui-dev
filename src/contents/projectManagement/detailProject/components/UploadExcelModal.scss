@@ -1,0 +1,223 @@
+$color-main-primary: #1a79cb;
+$color-main-secondary: rgba(38, 38, 38, 0.45);
+$color-text-error: #ff4d4f;
+$color-main-danger: #fff1f0;
+
+.upload-excel-modal {
+	.ant-modal-header {
+		.ant-modal-title {
+			font-weight: 600;
+		}
+	}
+
+	.ant-modal-content {
+		.upload-excel-modal-content {
+			.custom-row {
+				&:first-child {
+					background-color: #fafafa;
+
+					.ant-card-body {
+						background-color: #fafafa;
+					}
+				}
+
+				.solecode-ui-card {
+					.ant-card {
+						border-radius: 8px 8px 0 0;
+	
+						.ant-card-body {
+							padding: 16px;
+	
+							.wrapper {
+								display: flex;
+								flex-direction: row;
+								justify-content: space-between;
+								align-items: center;
+								position: relative;
+	
+								.dropzone-wrapper {
+									label {
+										.custom-dropzone-content {
+											display: flex;
+											flex-direction: row;
+											align-items: center;
+											gap: 18px;
+											background-color: rgba(229, 240, 254, 0.4);
+											border: 1px solid #d9d9d9;
+											height: 100%;
+											width: 100%;
+											min-width: 400px;
+											border-radius: 8px;
+											padding: 28px 24px;
+											cursor: pointer;
+		
+											span.anticon {
+												.solecode-ui-icon {
+													color: #5fa1db;
+												}
+											}
+		
+											.text {
+												cursor: pointer;
+		
+												div {
+													&:first-child {
+														font-size: 16px;
+													}
+													&:last-child {
+														font-size: 12px;
+														color: rgba(38, 38, 38, 0.45);
+													}
+												}
+											}
+										}
+									}
+	
+									.error-message {
+										margin-top: 8px;
+										background-color: $color-main-danger;
+										border: 1px solid $color-text-error;
+										border-radius: 8px;
+										padding: 9px 16px;
+										display: flex;
+										align-items: center;
+										gap: 8px;
+	
+										.anticon {
+											.solecode-ui-icon {
+												color: $color-text-error;
+											}
+										}
+	
+										.text {
+											color: $color-text-error;
+										}
+									}
+	
+									.file-upload-success {
+										display: flex;
+										flex-direction: row;
+										align-items: center;
+										justify-content: space-between;
+										gap: 12px;
+										padding: 27px;
+										background-color: #fff;
+										border: 1px solid #d9d9d9;
+										border-radius: 8px;
+	
+										.fa-file-excel {
+											color: #267d36;
+										}
+	
+										.file-details {
+											display: flex;
+											flex-direction: column;
+											align-items: flex-start;
+											gap: 4px;
+											padding-right: 22px;
+										}
+	
+										.fa-trash-can {
+											cursor: pointer;
+											color: $color-text-error;
+										}
+									}
+								}
+	
+								.status-wrapper {
+									display: flex;
+									flex-direction: row;
+									align-items: center;
+									gap: 16px;
+	
+									.uploading-status {
+										display: flex;
+										align-items: center;
+										gap: 10px;
+	
+										span {
+											font-weight: 600;
+										}
+									}
+	
+									.data-qty,
+									.aspect-found-qty {
+										display: flex;
+										gap: 5px;
+	
+										.value {
+											&-empty {
+												font-weight: 600;
+												color: $color-main-secondary;
+											}
+	
+											&-filled {
+												font-weight: 600;
+												color: $color-main-primary;
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+	
+				.table-wrapper {
+					&.no-data {
+						.solecode-ui-table {
+							.table-container {
+								overflow-y: auto;
+								min-height: 300px;
+							}
+						}
+					}
+	
+					.solecode-ui-table {
+						.table-container {
+							overflow-y: auto;
+							max-height: 632px;
+
+							.table-main {
+								white-space: normal;
+
+								tbody {
+									tr {
+										td {
+											vertical-align: baseline;
+
+											&:nth-child(4),
+											&:nth-child(5),
+											&:nth-child(6),
+											&:nth-child(8) {
+												max-width: 25em;
+												min-width: 20em;
+												width: 100%;
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.ant-modal-footer {
+		.solecode-ui-button {
+			.ant-btn {
+				height: 56px;
+				border-radius: 8px;
+
+				span {
+					display: flex;
+					flex-direction: row;
+					align-items: center;
+					gap: 5px;
+				}
+			}
+		}
+	}
+}

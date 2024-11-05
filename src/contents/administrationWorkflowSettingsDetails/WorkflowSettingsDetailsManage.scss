@@ -1,0 +1,37 @@
+.workflow-settings-detail-manage {
+  .header-manage {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .title {
+      margin-top: 24px;
+      margin-bottom: 24px;
+      border-left: 8px solid #1a79cb;
+      padding-left: 16px;
+      font-size: 24px;
+      font-weight: 600;
+    }
+
+    .info {
+      display: flex;
+      gap: 24px;
+    }
+  }
+  .divider {
+    width: 100%;
+    height: 0;
+    border-bottom: solid 1px #d9d9d9;
+    margin-bottom: 24px;
+  }
+  .header-action {
+    font-size: 14px;
+  }
+
+  .container {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-gap: 24px;
+    background-color: #fff;
+    padding: 16px 0;
+  }
+}

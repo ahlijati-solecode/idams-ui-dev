@@ -1,0 +1,27 @@
+$color-progress: #accd08;
+
+.custom-progress-bar {
+	.title-wrapper {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+
+		.info {
+			font-weight: 600;
+		}
+	}
+
+	.ant-progress-status {
+		&-success {
+			.ant-progress-bg {
+				background-color: $color-progress;
+			}
+		}
+
+		&-normal {
+			.ant-progress-bg {
+				background-color: #1890ff;
+			}
+		}
+	}
+}

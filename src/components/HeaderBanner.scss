@@ -1,0 +1,112 @@
+$color-text-danger: #ba313b;
+
+.header-banner {
+  height: 86px;
+  padding: 22px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 8px;
+  background-repeat: no-repeat;
+  background-position: right;
+  background-image: url('../../public/svg/header-image.svg');
+  text-align: left;
+
+	.header-action {
+		display: flex;
+		flex-direction: row;
+		gap: 16px;
+
+		.ant-btn {
+			&.ant-btn-lg {
+				height: 56px;
+			}
+		}
+		
+		.alert-wrapper {
+			.ant-alert {
+				height: 56px;
+			}
+			.solecode-ui-alert {
+				.ant-alert {
+					.ant-alert-content {
+						.ant-alert-message {
+							.message-wrapper {
+								span {
+									gap: 100px;
+		
+									.inner-wrapper {
+										color: $color-text-danger;
+		
+										span {
+											font-weight: 600;
+										}
+									}
+								}
+	
+								.description-right {
+									.icon-message-circle {
+										.anticon {
+											.solecode-ui-icon {
+												cursor: pointer;
+												color: #fff;
+												background-color: $color-text-danger;
+												border-radius: 50%;
+												padding: 6px;
+												margin-right: 0;
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+
+		.save-btn-wrapper {
+			.solecode-ui-button {
+				
+				.ant-btn.ant-btn-secondary {
+					color: #1a79cb;
+
+					&:disabled {
+						color: #d9d9d9;
+						background: #f0f0f0;
+					}
+				}
+			}
+		}
+	}
+
+  .title {
+    font-size: 30px;
+    font-weight: 600;
+    color: #000;
+    line-height: 1.27;
+  }
+
+  &.primary {
+    background-image: url('../../public/svg/header-image.svg'),
+      linear-gradient(95deg, #003766 5%, #258ee9 97%);
+    .title {
+      color: #fff;
+    }
+  }
+
+	.header-navigation {
+		display: flex;
+		align-items: center;
+		gap: 8px;
+		cursor: pointer;
+
+		.solecode-ui-icon {
+			color: #fff;
+		}
+
+		.breadcrumb {
+			color: #fff;
+		}
+	}
+}

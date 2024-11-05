@@ -1,0 +1,86 @@
+$color-pdf: #f5222d;
+$color-word: #1a79cb;
+$color-xls: #37b24d;
+$color-ppt: #f76707;
+$color-jpg: #ccaa31;
+
+.file-card-component {
+	display: flex;
+	gap: 16px;
+	flex-wrap: nowrap;
+	overflow: hidden;
+	scroll-behavior: smooth;
+
+	.file-card-item {
+		cursor: pointer;
+		display: flex;
+		padding: 20px;
+		flex-direction: row;
+		align-items: center;
+		gap: 4px;
+		border: 1px solid #d9d9d9;
+		border-radius: 8px;
+		width: 280px;
+		min-width: 280px;
+		background-color: #fff;
+
+		&:hover {
+			border: 1px solid $color-word;
+		}
+	
+		.anticon {
+			.fa-file {
+				&-pdf {
+					color: $color-pdf;
+				}
+	
+				&-word {
+					color: $color-word
+				}
+	
+				&-powerpoint {
+					color: $color-ppt;
+				}
+	
+				&-excel {
+					color: $color-xls
+				}
+
+				&-image {
+					color: $color-jpg;
+				}
+			}
+		}
+	
+		.details-wrapper {
+			display: flex;
+			flex-direction: column;
+			
+			.details {
+				&-title {
+					font-size: 16px;
+					font-weight: 600;
+					width: 100%;
+					max-width: 175px;
+					white-space: nowrap;
+					overflow: hidden;
+					text-overflow: ellipsis;
+				}
+	
+				&-category {
+					font-size: 14px;
+					width: 100%;
+					max-width: 175px;
+					white-space: nowrap;
+					overflow: hidden;
+					text-overflow: ellipsis;
+				}
+	
+				&-opened-at {
+					font-size: 12px;
+					color: rgba(38, 38, 38, 0.45);
+				}
+			}
+		}
+	}
+}

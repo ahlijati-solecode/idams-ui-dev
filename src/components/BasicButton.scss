@@ -1,0 +1,30 @@
+.solecode-ui-basic-button {
+	.ant-btn {
+		height: 56px;
+		min-width: 120px;
+
+		&.ant-btn {
+			&-primary {
+				&:disabled {
+					background: #115d9e;
+					color: #d3d3d3;
+
+					.solecode-ui-icon {
+						color: #d3d3d3;
+					}
+				}
+			}
+
+			&-dangerous {
+				&:disabled {
+					background: #d13b3e !important;
+					color: #d3d3d3 !important;
+
+					.solecode-ui-icon {
+						color: #d3d3d3 !important;
+					}
+				}
+			}
+		}
+	}
+}

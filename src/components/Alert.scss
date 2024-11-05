@@ -1,0 +1,119 @@
+$background-success: #EBF7ED;
+$border-success: #37B24D;
+$background-error: #FFF1F0;
+$border-error: #FF4D4F;
+$background-warning: #FDF6E5;
+$border-warning: #E9A100;
+$background-info: #E5F5FC;
+$border-info: #017AAD;
+
+
+.solecode-ui-alert {
+  .ant-alert {
+    border-radius: 4px;
+  }
+  
+  .ant-alert-success {
+    svg {
+      &.solecode-ui-icon {
+        color: $border-success;
+      }
+    }
+  }
+  
+  .ant-alert-error {
+    svg {
+      &.solecode-ui-icon {
+        color: $border-error;
+      }
+    }
+  }
+  
+  .ant-alert-info {
+    svg {
+      &.solecode-ui-icon {
+        color: $border-info;
+      }
+    }
+  }
+  
+  .ant-alert-warning {
+    svg {
+      &.solecode-ui-icon {
+        color: $border-warning;
+      }
+    }
+  }
+  
+  .inner-wrapper-with-icon {
+    padding-left: 28px;
+  }
+  
+  .ant-alert-message {
+    span {
+      font-weight: 400;
+      font-size: 16px;
+    }
+    
+  }
+  
+  .ant-alert-description {
+    span {
+      font-weight: 300;
+      color: rgba(38, 38, 38, 0.9);
+      font-weight: 14px;
+    }
+  }
+  
+  .ant-alert-success {
+    background-color: $background-success;
+    border: 1px solid $border-success;
+  }
+  
+  .ant-alert-info {
+    background-color: $background-info;
+    border: 1px solid $border-info;
+  }
+  
+  .ant-alert-error {
+    background-color: $background-error;
+    border: 1px solid $border-error;
+  }
+  
+  .ant-alert-warning {
+    background-color: $background-warning;
+    border: 1px solid $border-warning;
+  }
+  
+  .solecode-ui-icon {
+    margin-right: 12px;
+  }
+
+  .message-wrapper {
+		.inner-wrapper {
+			display: flex;
+			flex-direction: row;
+		}
+
+		span {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+
+			.inner-wrapper {
+				display: flex;
+				flex-direction: row;
+			}
+
+			.details-wrapper {
+				.user,
+				.date {
+					display: flex;
+					align-items: center;
+					flex-direction: row;
+					flex-wrap: nowrap;
+				}
+			}
+		}
+  }
+}

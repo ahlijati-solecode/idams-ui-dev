@@ -1,0 +1,84 @@
+$color-character-background: rgba(229, 240, 254, 0.4);
+$color-border-of-status-badge-in-progress: #1667ad;
+$color-border-of-status-badge-revised: #f5222d;
+$color-border-of-status-badge-completed: #51810f;
+
+.solecode-ui-collapse {
+  .ant-collapse {
+    background-color: $color-character-background;
+
+    .ant-collapse-header {
+      font-size: 16px;
+      font-weight: 400px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      .anticon {
+        margin-right: 10px;
+      }
+    }
+
+    .ant-collapse-content-box {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+
+      .solecode-ui-empty-state {
+        text-align: center;
+      }
+    }
+
+    &.ant-collapse-icon-position-end {
+      > .ant-collapse-item {
+        > .ant-collapse-header {
+          .anticon {
+            position: absolute;
+            top: 50%;
+            right: 16px;
+            left: auto;
+            margin: 0;
+            transform: translateY(-50%);
+          }
+        }
+      }
+    }
+
+    > .ant-collapse-item {
+      > .ant-collapse-header {
+        .ant-collapse-extra {
+          margin-right: 30px;
+
+          .badge-status {
+            &-in-progress,
+            &-completed,
+            &-revised,
+            &-skipped {
+              border-radius: 50px;
+              padding: 3px 15px;
+            }
+
+            &-in-progress {
+              background-color: #fff;
+              border: 1px solid $color-border-of-status-badge-in-progress;
+              color: $color-border-of-status-badge-in-progress;
+            }
+
+            &-revised,
+            &-skipped {
+              background-color: #fff;
+              border: 1px solid $color-border-of-status-badge-revised;
+              color: $color-border-of-status-badge-revised;
+            }
+
+            &-completed {
+              background-color: #fff;
+              border: 1px solid $color-border-of-status-badge-completed;
+              color: $color-border-of-status-badge-completed;
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,29 @@
+.sortable-workflow {
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 8px;
+    margin-bottom: 24px;
+  }
+  &__title {
+    flex-grow: 1;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 1.5;
+    letter-spacing: 0.8px;
+    text-align: left;
+    color: rgba(38, 38, 38, 0.9);
+  }
+
+  .header__inisiasi {
+    border-bottom: solid 4px #1a79cb;
+  }
+
+  .header__seleksi {
+    border-bottom: solid 4px #accd08;
+  }
+
+  .header__kajian-lanjut {
+    border-bottom: solid 4px #ff4d4f;
+  }
+}

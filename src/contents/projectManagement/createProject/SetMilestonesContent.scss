@@ -1,0 +1,131 @@
+.create-project-set-milestones-content {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #f0f0f0;
+  border-radius: 8px;
+	padding: 24px;
+
+  .create-project-set-milestones-project-template-name-input {
+    .solecode-ui-input-text {
+      .ant-input-disabled {
+        height: 56px;
+        background: rgba(229, 240, 254, 0.4);
+        border: 1px solid #a3c9ea;
+        color: rgba(38, 38, 38, 0.45);
+      }
+    }
+  }
+
+  .solecode-ui-paper-title {
+    font-size: 16px;
+    border: none;
+    margin-bottom: 12px;
+  }
+
+  .milestones-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+    margin-top: 24px;
+
+    > div {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+      width: 100%;
+
+      > div:first-child {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 8px;
+        border-bottom: 4px solid #1a79cb;
+
+        > div:first-child {
+          font-style: 16px;
+          font-weight: bold;
+        }
+
+        > div:last-child {
+          color: #1a79cb;
+          font-style: 14px;
+          text-decoration: underline;
+          cursor: pointer;
+        }
+      }
+
+      > div:last-child {
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+        gap: 12px;
+        padding: 16px;
+        border-radius: 8px;
+        background: rgba(229, 240, 254, 0.4);
+
+        .milestone-card {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          min-height: 180px;
+          padding: 16px;
+          background: #fff;
+          border: 1px solid #1a79cb;
+          border-radius: 8px;
+          font-size: 16px;
+
+          > div:first-child {
+            color: #1a79cb;
+            font-weight: bold;
+          }
+
+          > div:nth-child(2) {
+            min-height: 48px;
+            overflow: hidden;
+          }
+
+          > div:nth-child(3) {
+            display: flex;
+            gap: 6px;
+            font-size: 14px;
+            font-weight: bold;
+
+            .anticon {
+              svg {
+                color: #1a79cb;
+              }
+            }
+          }
+
+          &.initiation {
+            background: #1a79cb;
+            color: #fff;
+
+            > div:first-child {
+              color: #fff;
+            }
+
+            > div:nth-child(3) {
+              .anticon {
+                svg {
+                  color: #fff;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    > div:nth-child(2) {
+      > div:first-child {
+        border-bottom: 4px solid #accd08;
+      }
+    }
+
+    > div:last-child {
+      > div:first-child {
+        border-bottom: 4px solid #ff4d4f;
+      }
+    }
+  }
+}

@@ -1,0 +1,129 @@
+$dot-soft-regional: #fcc29c;
+$dot-soft-shu: #f76707;
+$dot-soft-holding: #883904;
+
+.project-file-card-component {
+	cursor: pointer;
+	padding: 8px;
+
+	.solecode-ui-card {
+		.ant-card {
+			width: 100%;
+			border-radius: 8px;
+
+			.ant-card-body {
+				padding: 0;
+
+				.custom-card-header {
+					display: flex;
+					flex-direction: column;
+					gap: 15px;
+					border-bottom: 1px solid rgba(38, 38, 38, 0.1);
+					padding: 16px;
+
+					.project-title {
+						font-size: 20px;
+						font-weight: 600;
+
+						.text-ellipsis {
+							white-space: nowrap;
+							overflow: hidden;
+							text-overflow: ellipsis;
+						}
+
+						.solecode-ui-tooltip {
+							overflow: hidden;
+							width: 100%;
+							white-space: nowrap;
+							text-overflow: ellipsis;
+						}
+					}
+				}
+				
+				.custom-card-body {
+					display: flex;
+					flex-direction: column;
+					gap: 15px;
+					padding: 16px;
+					border-bottom: 1px solid rgba(38, 38, 38, 0.1);
+					background-color: #fafafa;
+
+					.detail-group {
+						display: flex;
+						flex-direction: row;
+						align-items: center;
+						gap: 20px;
+					
+						.divider {
+							border-right: 1px solid rgba(38, 38, 38, 0.1);
+							height: 14px;
+						}
+					
+						.threshold {
+							display: flex;
+							flex-direction: row;
+							gap: 12px;
+							align-items: center;
+					
+							.dot {
+								height: 8px;
+								width: 8px;
+								border-radius: 50%;
+								display: inline-block;
+					
+								&.dot {
+									&-shu {
+										background-color: $dot-soft-shu;
+									}
+					
+									&-regional {
+										background-color: $dot-soft-regional;
+									}
+									
+									&-holding {
+										background-color: $dot-soft-holding;
+									}
+								}
+							}
+						}
+					
+						.zona-regional {
+							color: #ff7875;
+						}
+					
+						.rkap,
+						.zona-regional {
+							font-weight: 600;
+						}
+					}
+
+					.project-sub-criteria {
+						font-size: 16px;
+					}
+				}
+
+				.custom-card-footer {
+					display: flex;
+					flex-direction: row;
+					justify-content: flex-end;
+					align-items: center;
+					gap: 8px;
+					background-color: #fafafa;
+					font-size: 14px;
+					padding: 16px;
+					border-radius: 0 0 8px 8px;
+				
+					span {
+						color: rgba(38, 38, 38, 0.45);
+
+						&.anticon {
+							.solecode-ui-icon {
+								color: rgba(38, 38, 38, 0.45);
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

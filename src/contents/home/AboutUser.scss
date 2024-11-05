@@ -1,0 +1,191 @@
+.about-user {
+  height: 100%;
+  position: relative;
+  border-radius: 8px;
+  background-image: linear-gradient(#003766, #258ee9);
+  font-size: 16px;
+
+  .green-accent {
+    position: absolute;
+    width: 205px;
+    height: 100%;
+    background: url('../../assets/green-accent.png');
+    background-repeat: no-repeat;
+  }
+
+  .batik {
+    position: absolute;
+    right: 0px;
+    width: 487px;
+    height: 100%;
+    background: url('../../assets/batik.png');
+    background-repeat: no-repeat;
+  }
+
+  .about-button {
+    position: absolute;
+    top: 24px;
+    right: 24px;
+
+    button {
+      background: #ffd53d !important;
+      color: #12558e;
+
+      .anticon {
+        .solecode-ui-icon {
+          color: #12558e;
+        }
+      }
+    }
+  }
+
+  .welcome-back {
+    position: absolute;
+    top: 80px;
+    left: 40px;
+    color: #ffffff;
+
+    > div:nth-child(2) {
+      font-size: 30px;
+      font-weight: bold;
+    }
+  }
+
+  .cards {
+    position: absolute;
+    bottom: 24px;
+    display: flex;
+    gap: 24px;
+    width: 100%;
+    height: 95px;
+    padding: 0px 24px;
+
+    > div {
+      width: 50%;
+      border-radius: 8px;
+      background: #ffffff;
+    }
+
+    .card {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 0px 16px;
+      position: relative;
+      overflow: hidden;
+
+      .card-icon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: -12px;
+        right: -12px;
+        width: 85px;
+        height: 85px;
+        border-radius: 50%;
+
+        &.blue {
+          background: #e5f0fe;
+
+          .anticon {
+            .solecode-ui-icon {
+              color: #1a79cb;
+            }
+          }
+        }
+
+        &.red {
+          background: #efadc4;
+
+          .anticon {
+            .solecode-ui-icon {
+              color: #ffffff;
+            }
+          }
+        }
+      }
+
+      .card-1-1 {
+        font-size: 16px;
+        font-weight: bold;
+      }
+
+      .card-1-2 {
+        font-size: 14px;
+        color: #1A79CB;
+        text-decoration: underline;
+        cursor: pointer;
+      }
+
+      .card-2-1 {
+        font-size: 14px;
+        font-weight: bold;
+      }
+
+      .card-2-2 {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+
+        .card-2-2-1 {
+          font-size: 38px;
+          font-weight: bold;
+          color: #1a79cb;
+          line-height: 38px;
+
+          &.medium {
+            color: #ffd53d;
+          }
+
+          &.large {
+            color: #ff4d4f;
+          }
+        }
+      }
+    }
+  }
+}
+
+.about-idams {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+
+  .row {
+    display: flex;
+    gap: 24px;
+
+    > div {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      width: 100%;
+      height: 254px;
+      padding: 24px;
+      border-radius: 12px;
+      background: lightblue;
+      background-size: cover;
+      color: #ffffff;
+      font-size: 24px;
+      font-weight: bold;
+      cursor: pointer;
+
+      > div:last-child {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 48px;
+        height: 48px;
+        border-radius: 50%;
+        background: #ffffff;
+
+        .anticon {
+          .solecode-ui-icon {
+            color: #1a79cb;
+          }
+        }
+      }
+    }
+  }
+}

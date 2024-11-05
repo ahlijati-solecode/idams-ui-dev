@@ -1,0 +1,26 @@
+.home {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
+  .first-row {
+    display: flex;
+    gap: 16px;
+    height: 298px;
+
+    > div {
+      width: 50%;
+      padding: 13px 16px;
+      border-radius: 8px;
+      background: #ffffff;
+    }
+
+    > div:first-child {
+      padding: 0px;
+    }
+
+    .about {
+      background: dodgerblue;
+    }
+  }
+}

@@ -1,0 +1,56 @@
+
+.create-project-management-page {
+	.steps-wrapper {
+		padding: 30px 30px 200px 30px;
+	}
+
+	.custom-row {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: nowrap;
+		gap: 16px;
+
+		&:not(:last-child) {
+			margin-bottom: 16px;
+		}
+	
+		> .custom-col-4 {
+			width: 25%;
+			padding: 13px 16px;
+			border-radius: 8px;
+			background: #ffffff;
+			height: 100%;
+		}
+
+		> .custom-col-8 {
+			width: 75%;
+			border-radius: 8px;
+			background: #ffffff;
+
+			.solecode-ui-card {
+				padding: 13px 16px;
+			}
+		}
+
+		> .custom-col-12 {
+			width: 100%;
+			padding: 13px 16px;
+			border-radius: 8px;
+			background: #ffffff;
+
+			&.full {
+				padding: 0;
+			}
+		}
+	}
+}
+
+.custom-max-width {
+	.solecode-ui-richtext {
+		.quill {
+			.ql-container {
+				max-width: 600px;
+			}
+		}
+	}
+}

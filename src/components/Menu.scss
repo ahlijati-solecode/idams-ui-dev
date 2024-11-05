@@ -1,0 +1,49 @@
+.solecode-ui-menu,
+.solecode-ui-menu-submenu {
+  .ant-menu {
+    font-size: 16px;
+    line-height: 56px;
+
+    .ant-menu-submenu,
+    .ant-menu-item {
+      .ant-menu-title-content {
+        margin: 0px 4px;
+
+        &:empty {
+          margin: 0px;
+        }
+      }
+    }
+
+    .ant-menu-submenu-selected,
+    .ant-menu-item-selected,
+    .ant-menu-submenu-active,
+    .ant-menu-item-active {
+      .anticon {
+        .solecode-ui-icon {
+          color: #1A79CB;
+        }
+      }
+
+      .ant-menu-title-content {
+        color: #1A79CB;
+      }
+    }
+
+    .anticon {
+      margin: 0px 4px;
+    }
+  }
+
+  &.ant-menu-submenu-popup {
+    border-radius: 8px !important;
+  }
+
+  .ant-menu {
+    border-radius: 8px !important;
+  }
+
+  .ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-item-selected::after {
+    border-bottom: 2px solid #1A79CB;
+  }
+}

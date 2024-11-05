@@ -1,0 +1,38 @@
+$size-height-sm: 32px;
+$size-height-md: 42px;
+$size-height-lg: 48px;
+
+$color-neutral-100: #262626;
+$color-main-primary: #1A79CB;
+$color-input-focus: rgba(26, 121, 203, 0.2);
+$color-character-placeholder: rgba(38, 38, 38, 0.45);
+$color-input-focus: rgba(26, 121, 203, 0.2);
+$color-input-disabled: rgba(229, 240, 254, 0.4);
+
+.solecode-ui-input-number {
+	.ant-input-number-affix-wrapper {
+		width: 100% !important;
+		border-radius: 8px;
+
+		>div {
+			&.ant-input-number {
+				border-radius: 0 8px 8px 0;
+			}
+		}
+	}
+
+	.ant-input-number {
+		height: $size-height-md;
+		line-height: $size-height-md;
+
+		&-lg {
+			height: $size-height-lg;
+			line-height: $size-height-lg;
+		}
+
+		&-sm {
+			height: $size-height-sm;
+			line-height: $size-height-sm;
+		}
+	}
+}

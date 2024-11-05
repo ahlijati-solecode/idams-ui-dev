@@ -1,0 +1,160 @@
+// @import '../../index.scss';
+$color-main-primary: #1A79CB;
+
+.solecode-ui-steps-combination {
+	.ant-steps-vertical {
+		gap: 25px;
+
+		>.ant-steps-item {
+			>.ant-steps-item-container {
+				>.ant-steps-item-tail {
+					top: -6px;
+					left: 15px;
+					height: 200%;
+
+					&::after {
+						width: 2px;
+					}
+				}
+			}
+
+			&-current {
+				&-unlocked {
+					>.ant-steps-item-container {
+						>.ant-steps-item-icon {
+							background: $color-main-primary;
+							border-color: $color-main-primary;
+	
+							.ant-steps-icon {
+								color: #fff;
+							}
+						}
+	
+						>.ant-steps-item-tail {
+							&::after {
+								background-color: $color-main-primary;
+							}
+						}
+
+						.ant-steps-item-content {
+							.ant-steps-item-title {
+								font-weight: 600;
+							}
+						}
+					}
+				}
+
+				&-latest {
+					>.ant-steps-item-container {
+						>.ant-steps-item-icon {
+							background: $color-main-primary;
+							border-color: $color-main-primary;
+	
+							.ant-steps-icon {
+								color: #fff;
+							}
+						}
+
+						.ant-steps-item-content {
+							.ant-steps-item-title {
+								font-weight: 600;
+							}
+						}
+					}
+				}
+			}
+
+			&-unlocked {
+				>.ant-steps-item-container {
+					>.ant-steps-item-icon {
+						background: #fff;
+						border-color: $color-main-primary;
+
+						.ant-steps-icon {
+							color: $color-main-primary;
+						}
+					}
+				}
+
+				&-next {
+					>.ant-steps-item-container {
+						>.ant-steps-item-icon {
+							background: #fff;
+							border-color: $color-main-primary;
+	
+							.ant-steps-icon {
+								color: $color-main-primary;
+							}
+						}
+						>.ant-steps-item-tail {
+							&::after {
+								background: $color-main-primary;
+							}
+						}
+					}
+				}
+			}
+
+			&-finish {
+				.ant-steps-item-icon {
+					border-color: $color-main-primary;
+		
+					>.ant-steps-icon {
+						color: $color-main-primary;
+					}
+				}
+
+				>.ant-steps-item-container {
+					>.ant-steps-item-content {
+						>.ant-steps-item-title {
+							&::after {
+								background-color: $color-main-primary;
+							}
+						}
+					}
+				}
+			}
+
+			&-disabled {
+				cursor: context-menu;
+			}
+
+			&-process {
+				>.ant-steps-item-container {
+					>.ant-steps-item-icon {
+						background: $color-main-primary;
+					}
+				}
+			}
+		}
+	}
+
+	.ant-steps {
+		.ant-steps-item-icon {
+			.ant-steps-icon {
+				top: -1.5px;
+			}
+		}
+
+		.ant-steps-item {
+			&:not(.ant-steps-item-active) {
+				.ant-steps-item-container[role='button']:hover {
+					.ant-steps-item-title,
+					.ant-steps-item-description {
+						color: $color-main-primary;
+					}
+				}
+
+				&:not(.ant-steps-item-process) {
+					>.ant-steps-item-container[role='button'] {
+						&:hover {
+							.ant-steps-item-icon {
+								border-color: $color-main-primary;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

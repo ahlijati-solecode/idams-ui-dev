@@ -1,0 +1,203 @@
+$color-main-primary: #1a79cb;
+
+.document-management-preview-page {
+	.custom-row {
+		display: flex;
+		flex-direction: row;
+
+		.custom-col-3 {
+			width: 25%;
+		}
+
+		.custom-col-9 {
+			width: 75%;
+		}
+		
+		.custom-col-12 {
+			width: 100%;
+		}
+
+		&:first-child {
+			position: relative;
+			z-index: 1;
+			box-shadow: 0 4px 8px 0 rgba(89, 89, 89, 0.2);
+		}
+	}
+
+	.header-banner-1 {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		background: url('../../assets/batik-white-right.png');
+		background-repeat: no-repeat;
+		width: 100%;
+		background-size: contain;
+		background-position: right;
+		padding: 12px 24px;
+		background-color: #fff;
+
+		.right {
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+			gap: 8px;
+
+			.spinner-wrapper {
+				.anticon {
+					.solecode-ui-icon {
+						&.fa-spinner-third {
+							color: $color-main-primary;
+						}
+					}
+				}
+			}
+		}
+
+		.left {
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+			gap: 8px;
+			color: $color-main-primary;
+			cursor: pointer;
+
+			.anticon {
+				.solecode-ui-icon {
+					color: $color-main-primary;
+				}
+			}
+		}
+	}
+
+	.list-wrapper {
+		background-color: #fff;
+		height: 100%;
+		padding-top: 12px;
+		padding-bottom: 12px;
+		position: relative;
+
+		.spinner-wrapper {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+
+			.anticon {
+				.solecode-ui-icon {
+					&.fa-spinner-third {
+						color: $color-main-primary;
+					}
+				}
+			}
+		}
+
+		.custom-container {
+			padding: 0 24px;
+
+			.detail-wrapper {
+				padding: 24px 0;
+				border-bottom: 1px solid #d9d9d9;
+	
+				.file-name {
+					font-size: 20px;
+					font-weight: 600;
+					margin-bottom: 24px;
+				}
+	
+				.last-modified {
+					font-size: 12px;
+					color: rgba(38, 38, 38, 0.45);
+					font-weight: 600;
+					margin-top: 24px;
+				}
+			}
+	
+			.version-history {
+				display: flex;
+				align-items: center;
+				justify-content: space-between;
+				border-bottom: 1px solid #d9d9d9;
+				padding: 12px 0;
+	
+				span {
+					&:first-child {
+						font-weight: 600;
+					}
+
+					&.link {
+						cursor: pointer;
+						color: $color-main-primary;
+						text-decoration: underline;
+	
+						&:hover {
+							color: #1360a2;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.history-wrapper {
+		font-size: 12px;
+		padding: 0 24px;
+
+		.list {
+			border-bottom: 1px solid #d9d9d9;
+			padding: 12px 0;
+
+			&.active,
+			&:hover {
+				background: rgb(255,255,255);
+				background: linear-gradient(100deg, rgba(255,255,255,0) 59%, rgba(217,217,217,0.7682423311121324) 100%);
+			}
+
+			&.active {
+				&:hover {
+					cursor: context-menu;
+				}
+			}
+
+			&:hover {
+				cursor: pointer;
+			}
+
+			.file-name,
+			.workflow-type-etc,
+			.last-modified {
+				width: 100%;
+				text-overflow: ellipsis;
+				overflow: hidden;
+			}
+	
+			.file-name {
+				font-weight: 600;
+			}
+
+			.last-modified {
+				color: #8c8c8c
+			}
+		}
+	}
+
+	.file-viewer-wrapper {
+		height: 100%;
+		min-height: 100vh;
+		background-color: #595959;
+		color: #fff;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		.spinner-wrapper {
+			.anticon {
+				.solecode-ui-icon {
+					color: $color-main-primary;
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,106 @@
+$size-height-sm: 32px;
+$size-height-md: 42px;
+$size-height-lg: 48px;
+
+$color-neutral-100: #262626;
+$color-main-primary: #1A79CB;
+$color-input-focus: rgba(26, 121, 203, 0.2);
+$color-character-placeholder: rgba(38, 38, 38, 0.45);
+$color-input-focus: rgba(26, 121, 203, 0.2);
+$color-input-disabled: rgba(229, 240, 254, 0.4);
+
+.solecode-ui-input-number {
+	position: relative;
+
+	.input {
+		&-prefix {
+			position: relative;
+
+			.prefix-element {
+				position: absolute;
+				top: 13px;
+				left: 12px;
+				z-index: 1;
+			}
+	
+			.anticon {
+				position: absolute;
+				top: 15px;
+				left: 15px;
+				z-index: 1;
+			}
+	
+			input {
+				padding-left: 40.5px;
+			}
+		}
+
+		&-suffix {
+			position: relative;
+
+			.suffix-element {
+				position: absolute;
+				top: 13px;
+				right: 12px;
+
+				.suffix-custom {
+					font-size: 16px;
+					line-height: 1.5;
+					color: $color-main-primary;
+				}
+			}
+
+			input {
+				padding-right: 40.5px;
+			}
+		}
+	}
+
+	input {
+		width: 100%;
+		height: $size-height-lg;
+		border-radius: 8px;
+		color: #262626;
+		line-height: 24px;
+		font-weight: 400;
+		font-size: 16px;
+		font-style: normal;
+		padding: 12px;
+		border: 1px solid #d9d9d9;
+		transition: all .3s;
+		background-image: none;
+		background-color: #fff;
+		min-width: 0;
+		display: inline-block;
+		position: relative;
+		font-feature-settings: "tnum";
+		list-style: none;
+		font-variant: tabular-nums;
+		margin: 0;
+		box-sizing: border-box;
+
+		&::placeholder {
+			color: rgba(0,0,0,.25);
+		}
+
+		&:focus {
+			border: 1px solid $color-main-primary;
+			box-shadow: 0px 0px 0px 2px rgb(26 121 203 / 20%);
+		}
+
+		&:hover {
+			&:not(:disabled) {
+				border-color: #40a9ff;
+				border-right-width: 1px;
+			}
+		}
+
+		&:focus-visible {
+			outline: none;
+		}
+
+		&:disabled {
+			background-color: rgba(229, 240, 254, 0.4);
+		}
+	}
+}

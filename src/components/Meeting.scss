@@ -1,0 +1,115 @@
+.solecode-ui-meeting {
+  .title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 9px;
+    font-size: 14px;
+    font-weight: bolder;
+
+    .view-calendar {
+      display: flex;
+      align-items: center;
+      gap: 11px;
+      color: #1a79cb;
+      font-size: 16px;
+      cursor: pointer;
+
+      .anticon {
+        .solecode-ui-icon {
+          color: #1A79CB;
+        }
+      }
+    }
+  }
+
+  .meeting-list {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+    .meeting-item {
+      display: flex;
+      align-items: center;
+      gap: 24px;
+      height: 62px;
+      padding: 8px 32px;
+      border-left: 8px solid #5fa1db;
+      background: #f5f5f5;
+  
+      > div:first-child {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        color: #5fa1db;
+        font-size: 12px;
+        font-weight: bold;
+  
+        > div:first-child {
+          font-size: 16px;
+        }
+      }
+  
+      > div:last-child {
+        display: flex;
+        flex-direction: column;
+        font-size: 14px;
+  
+        > div:first-child {
+          font-size: 16px;
+          font-weight: bold;
+        }
+      }
+    }
+
+    .empty {
+      display: flex;
+      align-items: center;
+      gap: 24px;
+      padding: 18px 32px;
+      border: solid 1px #d9d9d9;
+      border-radius: 8px;
+      font-size: 16px;
+
+      &.sm {
+        height: 62px;
+      }
+
+      &.md {
+        height: 93px;
+      }
+
+      &.lg {
+        height: 132px;
+      }
+
+      .calendar-icon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 48px;
+        height: 48px;
+        border-radius: 50%;
+        background: #d9d9d9;
+
+        .anticon {
+          .solecode-ui-icon {
+            color: #ffffff;
+          }
+        }
+      }
+    }
+  }
+
+  &.upcoming {
+    .meeting-list {
+      .meeting-item {
+        border-left: 8px solid #f99551;
+
+        > div:first-child {
+          color: #f99551;
+        }
+      }
+    }
+  }
+}

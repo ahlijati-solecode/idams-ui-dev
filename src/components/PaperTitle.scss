@@ -1,0 +1,16 @@
+.solecode-ui-paper-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 32px;
+  padding-left: 16px;
+  border-left: 8px solid #1a79cb;
+  font-size: 24px;
+  font-weight: bold;
+
+	.btn-scroll-wrapper {
+		display: flex;
+		gap: 5px;
+	}
+}

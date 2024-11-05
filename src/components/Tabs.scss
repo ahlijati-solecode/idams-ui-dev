@@ -1,0 +1,24 @@
+$color-main-primary: #1A79CB;
+$bg-badge-disabled: rgba(38, 38, 38, 0.25);
+
+.solecode-ui-tabs {
+	.ant-tabs {
+		>.ant-tabs-nav {
+			.ant-tabs-nav-list {
+				margin: 0 24px 0 24px;
+			}
+		}
+	}
+	.ant-tabs-tab {
+		padding-top: 24px;
+		padding-bottom: 24px;
+		font-size: 16px;
+		color: rgba(38, 38, 38, 0.45);
+	}
+
+	.ant-tabs-top {
+		>.ant-tabs-nav {
+			margin: 0;
+		}
+	}
+}

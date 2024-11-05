@@ -1,0 +1,93 @@
+.log-history-page {
+  background-color: #fff;
+  padding: 24px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+	border-radius: 8px;
+
+  .log-filter {
+    width: 634px;
+    max-width: 634px;
+  }
+
+  .log-table {
+    width: 100%;
+
+    .empty-state {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      font-size: 16px;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.5;
+      letter-spacing: normal;
+      text-align: center;
+      color: rgba(38, 38, 38, 0.45);
+  
+      .text {
+        margin-top: 20px;
+      }
+    }
+
+    .solecode-ui-table {
+      .table-container {
+        overflow: auto;
+
+        .table-main {
+          thead {
+            tr {
+              th {
+                padding: 24px 16px;
+                border-bottom: solid 1px rgba(38, 38, 38, 0.1);
+                border-top: solid 1px rgba(38, 38, 38, 0.1);
+              }
+            }
+          }
+        
+          tbody {
+            tr {
+              td {
+                padding: 16px;
+                border-bottom: solid 1px rgba(38, 38, 38, 0.1);
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .solecode-ui-pagination {
+      width: 100%;
+      
+      div:first-child {
+        font-size: 16px;
+        font-weight: 600;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.5;
+        letter-spacing: normal;
+        text-align: left;
+        color: rgba(38, 38, 38, 0.9);
+      }
+      .page-index {
+        margin-left: auto;
+        div:nth-last-child(1) {
+          display: none;
+        }
+        div:nth-last-child(2) {
+          display: none;
+        }
+        div:nth-last-child(3) {
+          display: none;
+        }
+      }
+    }
+  }
+
+  
+
+}

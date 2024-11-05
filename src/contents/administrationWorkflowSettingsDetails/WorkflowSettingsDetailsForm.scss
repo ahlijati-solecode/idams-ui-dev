@@ -1,0 +1,54 @@
+.workflow-setting-form {
+  .form {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-gap: 16px;
+    border: 1px solid #d9d9d9;
+    border-radius: 8px;
+    padding: 24px;
+    &-title {
+      margin-bottom: 24px;
+      border-left: 8px solid #1a79cb;
+      padding-left: 16px;
+      font-size: 24px;
+      font-weight: 600;
+    }
+
+    &-label {
+      font-size: 16px;
+      font-weight: 600;
+      line-height: 1.5;
+      color: rgba(38, 38, 38, 0.9);
+      margin-bottom: 12px;
+    }
+
+    &-footer {
+      display: flex;
+      margin-top: 24px;
+      justify-content: flex-end;
+
+      .ant-btn.ant-btn-lg {
+        height: 56px;
+      }
+    }
+
+    .solecode-ui-input-text {
+      .ant-input {
+        border: 1px solid #a3c9ea;
+        border-radius: 8px;
+      }
+      .ant-input:disabled {
+        border: none;
+      }
+    }
+
+    .solecode-ui-select-search {
+      .ant-select {
+        .ant-select-selector {
+          border: 1px solid #a3c9ea;
+          border-radius: 8px;
+        }
+      }
+    }
+  }
+}

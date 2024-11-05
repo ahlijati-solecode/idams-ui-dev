@@ -1,0 +1,40 @@
+.update-upload-data {
+	.update-project-information {
+		display: flex;
+		flex-direction: column;
+		gap: 8px;
+
+		.solecode-ui-button {
+			.ant-btn {
+				width: 100%;
+				text-align: left;
+
+				div {
+					display: flex;
+					flex-direction: row;
+					justify-content: space-between;
+
+					div {
+						&:last-child {
+							color: rgba(38, 38, 38, 0.45);
+							font-size: 14px;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.btn-action {
+		text-align: right;
+		margin-top: 24px;
+
+		.solecode-ui-button {
+			.ant-btn {
+				&-lg {
+					height: 58px;
+				}
+			}
+		}
+	}
+}

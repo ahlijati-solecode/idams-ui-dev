@@ -1,0 +1,61 @@
+.outstanding-task-list {
+  .outstanding-task-list-table {
+    .solecode-ui-table-wrapper {
+      .solecode-ui-table-header {
+        .solecode-ui-button {
+          button {
+            border-radius: 8px;
+          }
+        }
+      }
+    }
+
+    .solecode-ui-table {
+      .pagination {
+        .solecode-ui-pagination {
+          display: flex;
+          justify-content: space-between;
+          width: 100%;
+
+          > div:first-child {
+            font-weight: bold;
+          }
+
+          .page-index {
+            margin-left: auto;
+
+            div:nth-last-child(1) {
+              display: none;
+            }
+
+            div:nth-last-child(2) {
+              display: none;
+            }
+
+            div:nth-last-child(3) {
+              display: none;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .filter-container {
+    display: flex;
+    width: 634px;
+
+    .solecode-ui-dropdown {
+      width: 100%;
+
+      .ant-btn {
+        height: 56px;
+        border-radius: 8px;
+      }
+    }
+
+    .solecode-ui-search-filter {
+      width: 300%;
+    }
+  }
+}

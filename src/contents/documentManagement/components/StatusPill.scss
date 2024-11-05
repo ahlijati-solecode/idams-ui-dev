@@ -1,0 +1,13 @@
+.status-pill {
+	border: 1px solid #1667ad;
+	border-radius: 50px;
+	padding: 3px 12px;
+	font-size: 14px;
+	color: #1667ad;
+	width: fit-content;
+
+	&.status-completed {
+		color: #51810f;
+		border: 1px solid #51810f;
+	}
+}

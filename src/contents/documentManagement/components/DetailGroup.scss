@@ -1,0 +1,52 @@
+$dot-soft-regional: #fcc29c;
+$dot-soft-shu: #f76707;
+$dot-soft-holding: #883904;
+
+.detail-group {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	gap: 20px;
+
+	.divider {
+		border-right: 1px solid rgba(38, 38, 38, 0.1);
+		height: 14px;
+	}
+
+	.threshold {
+		display: flex;
+		flex-direction: row;
+		gap: 12px;
+		align-items: center;
+
+		.dot {
+			height: 8px;
+			width: 8px;
+			border-radius: 50%;
+			display: inline-block;
+
+			&.dot {
+				&-shu {
+					background-color: $dot-soft-shu;
+				}
+
+				&-regional {
+					background-color: $dot-soft-regional;
+				}
+				
+				&-holding {
+					background-color: $dot-soft-holding;
+				}
+			}
+		}
+	}
+
+	.zona-regional {
+		color: #ff7875;
+	}
+
+	.rkap,
+	.zona-regional {
+		font-weight: 600;
+	}
+}
